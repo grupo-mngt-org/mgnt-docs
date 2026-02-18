@@ -2,7 +2,6 @@ site_name: ""
 theme:
   name: 'material'
   logo: './files/logo-dark.webp'
-  favicon: './files/logo-dark-without-text.png'
   features:
     - content.code.copy
     - content.code.select
