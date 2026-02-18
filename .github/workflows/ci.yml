@@ -58,6 +58,7 @@ env:
   APP_AREA_EMAIL_NAYARA: ${{ secrets.APP_AREA_EMAIL_NAYARA }}
   APP_AREA_EMAIL_TAIANE: ${{ secrets.APP_AREA_EMAIL_TAIANE }}
   APP_AREA_EMAIL_ERICA: ${{ secrets.APP_AREA_EMAIL_ERICA }}
+  CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
 
 jobs:
   deploy:
