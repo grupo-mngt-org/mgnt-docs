@@ -22,7 +22,7 @@ theme:
 plugins:
   - encryptcontent:
       title_prefix: '🔒 '
-      global_password: !ENV [PASSWORD, 'mercado']
+      global_password: !ENV [PASSWORD, 'mngt']
   - link-embeds:
       enabled: true
       name_default: "Untitled Link"
@@ -73,6 +73,7 @@ extra_javascript:
 nav:
   - Home: 'index.md'
   - Credentials:
+    - ChatGPT: 'credentials/chatgpt.md'
     - SupaBase: 'credentials/supabase.md'
     - APP MNGT: 'credentials/app-mngt.md'
     - Servidor API: 'credentials/server-api-mngt.md'
@@ -84,6 +85,44 @@ nav:
     - API Prevision: 'credentials/api-prevision.md'
     - API Sienge: 'credentials/api-sienge.md'
     - API Softexpert: 'credentials/api-softexpert.md'
-
+  - Documentation:
+      - Documentation: 'documentation/documentacao.md'
+      - API Sienge:
+          - API Sienge: 'documentation/documentacao/api-sienge.md'
+          - Modulo Complementar: 'documentation/documentacao/api-sienge/0-modulo-complementar.md'
+          - Modulo de Apoio Cadastros Base: 'documentation/documentacao/api-sienge/1-modulo-de-apoio-cadastros-base.md'
+          - Modulo Financeiro: 'documentation/documentacao/api-sienge/2-modulo-financeiro.md'
+          - Modulo de Suprimentos Compras e Estoque: 'documentation/documentacao/api-sienge/3-modulo-de-suprimentos-compras-e-estoque.md'
+          - Modulo de Engenharia e Custos: 'documentation/documentacao/api-sienge/4-modulo-de-engenharia-e-custos.md'
+          - Modulo Comercial Vendas e CRM: 'documentation/documentacao/api-sienge/5-modulo-comercial-vendas-e-crm.md'
+      - Registro de Reunioes:
+          - Registro de Reunioes: 'documentation/documentacao/registro-de-reunioes.md'
+          - Automatizacao Processo Contas a Pagar: 'documentation/documentacao/registro-de-reunioes/automatizacao-processo-contas-a-pagar.md'
+          - Mobuss Softexpert: 'documentation/documentacao/registro-de-reunioes/mobuss-softexpert.md'
+          - Registro Reuniao 05-11: 'documentation/documentacao/registro-de-reunioes/registro-reuniao-05-11-1.md'
+          - Registro Reuniao 10-11: 'documentation/documentacao/registro-de-reunioes/registro-reuniao-10-11-1.md'
+      - Visita Rio Claro:
+          - Visita Rio Claro: 'documentation/documentacao/visita-rio-claro.md'
+          - Administrativo Comercial e Contratos: 'documentation/documentacao/visita-rio-claro/administrativo-comercial-e-contratos.md'
+          - Agencia: 'documentation/documentacao/visita-rio-claro/agencia.md'
+          - Compras: 'documentation/documentacao/visita-rio-claro/compras.md'
+          - Conclusoes: 'documentation/documentacao/visita-rio-claro/conclusoes.md'
+          - Dia 1 08-12: 'documentation/documentacao/visita-rio-claro/dia-1-08-12.md'
+          - Financeiro: 'documentation/documentacao/visita-rio-claro/financeiro.md'
+          - House: 'documentation/documentacao/visita-rio-claro/house.md'
+          - Incorporacao: 'documentation/documentacao/visita-rio-claro/incorporacao.md'
+          - M2log Mais Armazem: 'documentation/documentacao/visita-rio-claro/m2log-mais-armazem.md'
+          - Orcamento: 'documentation/documentacao/visita-rio-claro/orcamento.md'
+          - Planejamento e Medicao: 'documentation/documentacao/visita-rio-claro/planejamento-e-medicao.md'
+          - Produtos: 'documentation/documentacao/visita-rio-claro/produtos.md'
+          - Projetos: 'documentation/documentacao/visita-rio-claro/projetos.md'
+          - Prospeccao: 'documentation/documentacao/visita-rio-claro/prospeccao.md'
+          - Qualidade: 'documentation/documentacao/visita-rio-claro/qualidade.md'
+          - SAC: 'documentation/documentacao/visita-rio-claro/sac.md'
+          - Seguranca: 'documentation/documentacao/visita-rio-claro/seguranca.md'
+          - Visita as Obras: 'documentation/documentacao/visita-rio-claro/visita-as-obras.md'
+  - Tasks:
+    - Tarefas: 'tasks/tarefas.md'
+    - Farol de Compras: 'tasks/tarefas/farol-de-compras.md'
   - Infra:
     - Start: 'infra/start.md'
