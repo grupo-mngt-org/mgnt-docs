@@ -1,7 +1,7 @@
 site_name: ""
 theme:
   name: 'material'
-  logo: './files/logo-dark.png'
+  logo: './files/logo-dark.webp'
   favicon: './files/logo-dark-without-text.png'
   features:
     - content.code.copy
@@ -72,39 +72,18 @@ extra_javascript:
 
 nav:
   - Home: 'index.md'
-  - Estudos: 'study/course.md'
-  - Design: 'design/links-design.md'
   - Credentials:
-    - Google Cloud: 'credentials/cloud-google.md'
-    - Facebook: 'credentials/facebook.md'
-    - Melhor Envio: 'credentials/melhor-envio.md'
-    - OpenAI: 'credentials/open-ai.md'
-    - Pagamentos: 'credentials/pagarme.md'
-    - Sendgrid: 'credentials/sendgrid.md'
+    - SupaBase: 'credentials/supabase.md'
+    - APP MNGT: 'credentials/app-mngt.md'
+    - Servidor API: 'credentials/server-api-mngt.md'
+    - Wordpress: 'credentials/wordpress.md'
+    - Email Mais Armazem: 'credentials/email-mais-armazem.md'
+    - Email Gabriel: 'credentials/email-gabriel.md'
+    - Email Devs: 'credentials/email-devs.md'
+    - API Mobbus: 'credentials/api-mobbus.md'
+    - API Prevision: 'credentials/api-prevision.md'
+    - API Sienge: 'credentials/api-sienge.md'
+    - API Softexpert: 'credentials/api-softexpert.md'
+
   - Infra:
     - Start: 'infra/start.md'
-    - Telemetria: 'infra/telemetry.md'
-    - Banco de Dados: 'infra/database.md'
-    - Domínios Mercado Topográfico: 'infra/domains.md'
-    - Backup do Banco de Dados: 'infra/backup-db.md'
-    - Acesso Remoto: 'infra/remote.md'
-    - Acesso AWS: 'infra/aws-access.md'
-    - Deploy & Fluxo de Branches: 'infra/deploy.md'
-    - RubyMine: 'infra/ruby-mine.md'
-  - Utils:
-      - Ruby on Rails: 'utils/commands.md'
-      - Criando uma Senha (hashed): 'utils/digest_password.md'
-      - Mercado Pago (chile): 'utils/mercadopago.md'
-  - APP:
-      - Configuration Guide:
-          - 💻 Installing OpenJDK and Android Studio: 'app/configuration-guide/installing-openjdk-and-android-studio.md'
-          - ⬇️ Download repository: 'app/configuration-guide/downloading-the-repository.md'
-          - 📲 Expo - emulate app: 'app/configuration-guide/expo-emulate-your-app.md'
-          - 📢 Develop, Build and Visualize: 'app/configuration-guide/develop-build-and-visualize.md'
-      - Development:
-          - 🧪 Component Testing: 'app/development/component-testing.md'
-          - 🎯 Design Patterns: 'app/development/design-patterns.md'
-          - 🤖 Errors when running Android: 'app/development/errors-when-running-android.md'
-  - Regras de Negócio:
-      - Central de Notificações: 'business-rules/notification-center.md'
-
