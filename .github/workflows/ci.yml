@@ -1,0 +1,88 @@
+name: ci
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+
+env:
+  PASSWORD: ${{ secrets.PASSWORD }}
+  SUPABASE_MNGT_PASS: ${{ secrets.SUPABASE_MNGT_PASS }}
+  SUPABASE_MNGT_PASS_ADDITIONAL: ${{ secrets.SUPABASE_MNGT_PASS_ADDITIONAL }}
+  SERVER_API_MNGT_PASS: ${{ secrets.SERVER_API_MNGT_PASS }}
+  WORDPRESS_MAIS_ARMAZEM_PASS: ${{ secrets.WORDPRESS_MAIS_ARMAZEM_PASS }}
+  EMAIL_MAIS_ARMAZEM_PASS: ${{ secrets.EMAIL_MAIS_ARMAZEM_PASS }}
+  EMAIL_GABRIEL_PASS: ${{ secrets.EMAIL_GABRIEL_PASS }}
+  EMAIL_DEVS_PASS_GMAIL: ${{ secrets.EMAIL_DEVS_PASS_GMAIL }}
+  EMAIL_DEVS_PASS_SIENGE: ${{ secrets.EMAIL_DEVS_PASS_SIENGE }}
+  EMAIL_DEVS_PASS_GH: ${{ secrets.EMAIL_DEVS_PASS_GH }}
+  EMAIL_DEVS_BOT_IMAP: ${{ secrets.EMAIL_DEVS_BOT_IMAP }}
+  EMAIL_DEVS_2FA_KEYS: ${{ secrets.EMAIL_DEVS_2FA_KEYS }}
+  APP_MNGT_PASS_FINANCEIRO: ${{ secrets.APP_MNGT_PASS_FINANCEIRO }}
+  APP_MNGT_PASS_SARA: ${{ secrets.APP_MNGT_PASS_SARA }}
+  APP_LIGHTWALL_PASS_ALANA: ${{ secrets.APP_LIGHTWALL_PASS_ALANA }}
+  APP_LIGHTWALL_PASS_TESTE: ${{ secrets.APP_LIGHTWALL_PASS_TESTE }}
+  APP_INTERNAL_PASS_DEV: ${{ secrets.APP_INTERNAL_PASS_DEV }}
+  APP_AREA_PASS_ADMIN: ${{ secrets.APP_AREA_PASS_ADMIN }}
+  APP_AREA_PASS_DEFAULT: ${{ secrets.APP_AREA_PASS_DEFAULT }}
+  API_PREVISION_TOKEN: ${{ secrets.API_PREVISION_TOKEN }}
+  API_SIENGE_TOKEN: ${{ secrets.API_SIENGE_TOKEN }}
+  API_SOFTEXPERT_PASS: ${{ secrets.API_SOFTEXPERT_PASS }}
+  API_SOFTEXPERT_JWT: ${{ secrets.API_SOFTEXPERT_JWT }}
+  API_SOFTEXPERT_KEY: ${{ secrets.API_SOFTEXPERT_KEY }}
+  SUPABASE_MNGT_EMAIL: ${{ secrets.SUPABASE_MNGT_EMAIL }}
+  SERVER_API_MNGT_IP: ${{ secrets.SERVER_API_MNGT_IP }}
+  SERVER_API_MNGT_USER: ${{ secrets.SERVER_API_MNGT_USER }}
+  SERVER_API_MNGT_SSH_CMD: ${{ secrets.SERVER_API_MNGT_SSH_CMD }}
+  WORDPRESS_MAIS_ARMAZEM_EMAIL: ${{ secrets.WORDPRESS_MAIS_ARMAZEM_EMAIL }}
+  EMAIL_MAIS_ARMAZEM_USER: ${{ secrets.EMAIL_MAIS_ARMAZEM_USER }}
+  EMAIL_GABRIEL_USER: ${{ secrets.EMAIL_GABRIEL_USER }}
+  EMAIL_DEVS_USER: ${{ secrets.EMAIL_DEVS_USER }}
+  API_SOFTEXPERT_USER: ${{ secrets.API_SOFTEXPERT_USER }}
+  APP_MNGT_EMAIL_FINANCEIRO: ${{ secrets.APP_MNGT_EMAIL_FINANCEIRO }}
+  APP_MNGT_EMAIL_SARA: ${{ secrets.APP_MNGT_EMAIL_SARA }}
+  APP_LIGHTWALL_EMAIL_ALANA: ${{ secrets.APP_LIGHTWALL_EMAIL_ALANA }}
+  APP_LIGHTWALL_EMAIL_TESTE: ${{ secrets.APP_LIGHTWALL_EMAIL_TESTE }}
+  APP_INTERNAL_EMAIL_DEV: ${{ secrets.APP_INTERNAL_EMAIL_DEV }}
+  APP_AREA_EMAIL_ADMIN: ${{ secrets.APP_AREA_EMAIL_ADMIN }}
+  APP_AREA_EMAIL_YAMINE: ${{ secrets.APP_AREA_EMAIL_YAMINE }}
+  APP_AREA_EMAIL_JULIANE: ${{ secrets.APP_AREA_EMAIL_JULIANE }}
+  APP_AREA_EMAIL_THAYNA: ${{ secrets.APP_AREA_EMAIL_THAYNA }}
+  APP_AREA_EMAIL_THAIS: ${{ secrets.APP_AREA_EMAIL_THAIS }}
+  APP_AREA_EMAIL_ADRIELE: ${{ secrets.APP_AREA_EMAIL_ADRIELE }}
+  APP_AREA_EMAIL_ARIANE: ${{ secrets.APP_AREA_EMAIL_ARIANE }}
+  APP_AREA_EMAIL_LEONARDO: ${{ secrets.APP_AREA_EMAIL_LEONARDO }}
+  APP_AREA_EMAIL_DANIELA: ${{ secrets.APP_AREA_EMAIL_DANIELA }}
+  APP_AREA_EMAIL_MARIA: ${{ secrets.APP_AREA_EMAIL_MARIA }}
+  APP_AREA_EMAIL_NAYARA: ${{ secrets.APP_AREA_EMAIL_NAYARA }}
+  APP_AREA_EMAIL_TAIANE: ${{ secrets.APP_AREA_EMAIL_TAIANE }}
+  APP_AREA_EMAIL_ERICA: ${{ secrets.APP_AREA_EMAIL_ERICA }}
+  CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install mkdocs-material
+      - run: pip install pymdown-extensions
+      - run: pip install mkdocs-encryptcontent-plugin
+      - run: pip install mkdocs-link-embeds-plugin
+      - run: pip install jinja2
+      - run: python environment.py
+      - run: mkdocs gh-deploy --force
