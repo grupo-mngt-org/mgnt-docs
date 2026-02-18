@@ -72,6 +72,11 @@ extra_javascript:
 
 nav:
   - Home: 'index.md'
+  - AI:
+    - guides:
+      - IA Aplicada para desenvolvedores em empresas: 'ai/guides/1-IA-aplicada-para-desenvolvedores-em-empresas.md'
+    - tools:
+      - openwebui: 'ai/tools/openwebui.md'
   - Credentials:
     - ChatGPT: 'credentials/chatgpt.md'
     - SupaBase: 'credentials/supabase.md'
