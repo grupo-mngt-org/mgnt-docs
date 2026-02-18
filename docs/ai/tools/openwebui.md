@@ -13,7 +13,7 @@ que se conecta com modelos de IA como OpenAi, Claude, etc. ou até com modelos o
 O objetivo atual é utilizar o OpenWebUI para substituir o uso do ChatGPT, para a empresa inteira, sem limitações de plataforma do ChatGPT, em um servidor próprio utilizando a capacidade de multiplos usuáarios.
 
 Empresas:
-- Área Incrível: http://198.27.97.43:3000/
+- Área Incrível: {{OPENWEBUI_AREA_INCRIVEL_URL}}
 - Mais Armazém: (Em Breve)
 
 Modelos:
