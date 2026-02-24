@@ -443,8 +443,7 @@ controle.
     Você pode combinar no prompt: "\... e se possível, forneça um resumo
     de uma frase do pedido.".
 5.  Lembre-se de usar placeholders do n8n: no prompt, insira a variável
-    do conteúdo do e-mail, algo como `{{$json["text"]}}` ou similar,
-    dependendo do nó IMAP (que provavelmente dá campos como *text* para
+    do conteúdo do e-mail, dependendo do nó IMAP (que provavelmente dá campos como *text* para
     corpo).
 6.  **Decidir caminho com Switch:** Adicione um nó **Switch** para atuar
     conforme a classificação dada pelo modelo. Configure-o para ler o
