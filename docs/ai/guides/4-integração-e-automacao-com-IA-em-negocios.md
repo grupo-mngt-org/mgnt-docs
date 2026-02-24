@@ -550,8 +550,8 @@ Um possível fluxo implementado teria a seguinte sequência de nós:
 -   Default: (se for algo inesperado) poderia ir para caminho B por
     segurança ou notificar humano.
 -   **Gmail (Enviar) - Caminho A:**
--   *Para:* remetente original ({{\$node\[\"IMAP
-    Email\"\].json\[\"from\"\]}}).
+-   *Para:* remetente original (({% raw %}{{\$node\[\"IMAP
+    Email\"\].json\[\"from\"\]}}{% endraw %}).
 -   *Assunto:* \"Recebemos seu pedido -- Em análise\".
 -   *Conteúdo:* mensagem confirmando recebimento, usando talvez o
     resumo:\
@@ -567,7 +567,7 @@ Um possível fluxo implementado teria a seguinte sequência de nós:
     então talvez dois nós separados ou usando Merge antes)
 -   Configurado com colunas: DataHora ({% raw %}{{\$now}}{% endraw %}), From, Assunto,
     Classificação
-    ({{\$node\[\"Function\"\].json\[\"status_classificacao\"\]}}),
+    ({% raw %}{{\$node\[\"Function\"\].json\[\"status_classificacao\"\]}}{% endraw %}),
     Resumo ({% raw %}{{\$node\[\"Function\"\].json\[\"resumo_pedido\"\]}}{% endraw %}).
 -   Cada execução do fluxo adiciona uma linha ao sheet de log.
 -   **Optional - Slack notification:** posta no canal #financeiro um
