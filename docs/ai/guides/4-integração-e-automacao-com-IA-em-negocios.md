@@ -461,12 +461,12 @@ controle.
     do chamado ou prazo estimado. Você pode aproveitar o **resumo
     gerado** pelo modelo no passo anterior inserindo a variável
     correspondente, para personalizar a resposta (ex.: "Recebemos seu
-    pedido referente a *{{\$node\[\"OpenAI\"\].json\[\"summary\"\]}}*.
+    pedido referente a {% raw %}*{{\$node\[\"OpenAI\"\].json\[\"summary\"\]}}*{% raw %}.
     Estimamos respondê-lo em 2 dias úteis\...").
 12. Para incompleto: uma resposta gentil pedindo as informações
     faltantes que o modelo identificou. Ex: "Identificamos que faltam
     algumas informações para processar seu pedido, como
-    *{{\$node\[\"OpenAI\"\].json\[\"missing_info\"\]}}*. Poderia nos
+    {% raw %}*{{\$node\[\"OpenAI\"\].json\[\"missing_info\"\]}}*{% raw %}. Poderia nos
     encaminhar esses detalhes?" (considerando que no prompt do OpenAI
     você pediu para listar o que falta na explicação).
 13. Dica: Use as saídas mapeadas do nó OpenAI. Se o modelo retornou um
@@ -529,7 +529,7 @@ Um possível fluxo implementado teria a seguinte sequência de nós:
 
         Email: 
         """ 
-        {{$json["text"]}} 
+        {% raw %}{{$json["text"]}}{% raw %}
         """
 
     O modelo então deve responder algo como: *\"COMPLETO; O pedido
@@ -556,19 +556,19 @@ Um possível fluxo implementado teria a seguinte sequência de nós:
 -   *Conteúdo:* mensagem confirmando recebimento, usando talvez o
     resumo:\
     *Ex:*
-    `Olá, recebemos sua solicitação de orçamento. Nosso time já está analisando e em breve retornamos. (Resumo: {{$node["Function"].json["resumo_pedido"]}} )`.
+    `Olá, recebemos sua solicitação de orçamento. Nosso time já está analisando e em breve retornamos. (Resumo: {% raw %}{{$node["Function"].json["resumo_pedido"]}}{% raw %} )`.
 -   **Gmail (Enviar) - Caminho B:**
 -   *Para:* remetente.
 -   *Assunto:* \"Solicitação de orçamento -- informações adicionais
     necessárias\".
 -   *Conteúdo:*
-    `Olá, recebemos seu pedido de orçamento, mas precisamos de alguns dados para prosseguir: {{$node["Function"].json["pendencias"]}}. Poderia nos enviar?`.
+    `Olá, recebemos seu pedido de orçamento, mas precisamos de alguns dados para prosseguir: {% raw %}{{$node["Function"].json["pendencias"]}}{% raw %}. Poderia nos enviar?`.
 -   **Google Sheets (Append Row):** (convergindo de ambos caminhos,
     então talvez dois nós separados ou usando Merge antes)
--   Configurado com colunas: DataHora ({{\$now}}), From, Assunto,
+-   Configurado com colunas: DataHora ({% raw %}{{\$now}}{% raw %}), From, Assunto,
     Classificação
     ({{\$node\[\"Function\"\].json\[\"status_classificacao\"\]}}),
-    Resumo ({{\$node\[\"Function\"\].json\[\"resumo_pedido\"\]}}).
+    Resumo ({% raw %}{{\$node\[\"Function\"\].json\[\"resumo_pedido\"\]}}{% raw %}).
 -   Cada execução do fluxo adiciona uma linha ao sheet de log.
 -   **Optional - Slack notification:** posta no canal #financeiro um
     aviso \"Pedido de orçamento de João (R\$50k) recebido e registrado
