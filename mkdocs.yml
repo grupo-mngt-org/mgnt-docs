@@ -74,6 +74,7 @@ nav:
   - AI:
     - Guias:
       - 1 - IA Aplicada para desenvolvedores em empresas: 'ai/guides/1-IA-aplicada-para-desenvolvedores-em-empresas.md'
+      - 4 - Integração e Automação com IA em Negócios (Guia Avançado): 'ai/guides/4-integração-e-automacao-com-IA-em-negocios.md'
     - Ferramentas:
       - OpenWebUI: 'ai/tools/openwebui.md'
     - Descobertas:
