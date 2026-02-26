@@ -79,7 +79,7 @@ nav:
       - OpenWebUI: 'ai/tools/openwebui.md'
     - Descobertas:
       - Oportunidades de aplicação de IA nos negócios do Grupo MNGT: 'ai/discovery/oportunidades.md'
-  - Credentials:
+  - Credenciais:
     - ChatGPT: 'credentials/chatgpt.md'
     - SupaBase: 'credentials/supabase.md'
     - APP MNGT: 'credentials/app-mngt.md'
@@ -92,6 +92,7 @@ nav:
     - API Prevision: 'credentials/api-prevision.md'
     - API Sienge: 'credentials/api-sienge.md'
     - API Softexpert: 'credentials/api-softexpert.md'
+    - Evolution API: 'credentials/evolutions-api.md'
   - Ferramentas:
     - Evolution API: 'tools/evolution-api.md'
   - Documentation:
