@@ -92,6 +92,8 @@ nav:
     - API Prevision: 'credentials/api-prevision.md'
     - API Sienge: 'credentials/api-sienge.md'
     - API Softexpert: 'credentials/api-softexpert.md'
+  - Ferramentas:
+    - Evolution API: 'tools/evolutionapi.md'
   - Documentation:
       - Documentation: 'documentation/documentacao.md'
       - API Sienge:
