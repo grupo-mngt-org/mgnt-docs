@@ -93,6 +93,7 @@ nav:
     - API Sienge: 'credentials/api-sienge.md'
     - API Softexpert: 'credentials/api-softexpert.md'
     - Evolution API: 'credentials/evolution-api.md'
+    - n8n: 'credentials/n8n.md'
   - Ferramentas:
     - Evolution API: 'tools/evolution-api.md'
   - Documentation:
