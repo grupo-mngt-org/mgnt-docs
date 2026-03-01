@@ -61,6 +61,7 @@ env:
   APP_AREA_EMAIL_ERICA: ${{ secrets.APP_AREA_EMAIL_ERICA }}
   CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
   EVOLUTION_API_KEY: ${{ secrets.EVOLUTION_API_KEY }}
+  N8N_PASSWORD: ${{ secrets.N8N_PASSWORD }}
 
 jobs:
   deploy:
