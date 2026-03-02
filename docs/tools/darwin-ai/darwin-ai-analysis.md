@@ -1,3 +1,6 @@
+## Introdução
+O objetivo desse documento é catalogar análise e testes da plataforma Darwin AI, em um posto de visto mais voltado para a parte técnica da tecnologia, em especial as integrações com ferramentas externas.
+
 ## Testes
 Foram usados dois funcionárias de IA: Atlas e Incrível
 
@@ -197,7 +200,8 @@ Pipeline de Armazenagem:
 Pipeline de Locação:
 <img width="1390" height="558" alt="image" src="https://github.com/user-attachments/assets/15fcec96-f45a-42ee-9603-1bb3122d60a3" />
 
-A última etapa (Agendamento de visita) foi criada durante os testes. O objetivo dessa etapa é validar a integração 
+A última etapa (Agendamento de visita) foi criada durante os testes. O objetivo dessa etapa é validar integrações. A integração com o Google Claendar já é "nativa" da plataforma, enquanto a integração com o Discord foi
+personalizada para esse teste por meio da criaçaõ de um servidor MCP usando Python.
 </details>
 
 *TO DO* **Ainda não consegui criar esse funcionário de IA para testar, estou por fazer esse teste**
@@ -212,6 +216,7 @@ O objetivo principal desses testes é validar as integrações com ferramentas e
 
 - Custom HTTP
 - Custom MCP
+- Integrações prontas (em geral, MCP já pré definidos)
 
 Custom HTTP permite se conectar com API's via requisições HTTP (funcionalidade aida não testada). Custom MCP permite se conectar com servidores MCP, seguindo os padrões definidos pela Anthropic,
 fornecendo um endpoint /sse que o Darwin AI utiliza para se comunicar com o servidor.
