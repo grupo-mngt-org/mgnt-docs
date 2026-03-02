@@ -192,22 +192,27 @@ Contrato formal assinado antes do início da operação.
   +55 11 97777-2000
 ```
 Pipeline inicial (Qualificação de leads):
+
 <img width="474" height="565" alt="image" src="https://github.com/user-attachments/assets/6bb8535b-e95c-4a96-92f7-1e026e279c06" />
 
 Pipeline de Armazenagem:
+
 <img width="1392" height="573" alt="image" src="https://github.com/user-attachments/assets/7435b58c-21bc-40a5-b9cd-ce778991de4d" />
 
 Pipeline de Locação:
+
 <img width="1390" height="558" alt="image" src="https://github.com/user-attachments/assets/15fcec96-f45a-42ee-9603-1bb3122d60a3" />
 
-A última etapa (Agendamento de visita) foi criada durante os testes. O objetivo dessa etapa é validar integrações. A integração com o Google Claendar já é "nativa" da plataforma, enquanto a integração com o Discord foi
-personalizada para esse teste por meio da criaçaõ de um servidor MCP usando Python.
+A última etapa (Agendamento de visita) foi criada durante os testes. O objetivo dessa etapa é validar integrações. A integração com o Google Calendar já é "nativa" da plataforma, enquanto a integração com o Discord foi
+personalizada para esse teste por meio da criação de um servidor MCP usando Python.
 </details>
 
-*TO DO* **Ainda não consegui criar esse funcionário de IA para testar, estou por fazer esse teste**
 Incrível: Funcionário de IA criado para fins desse teste, que tem um prompt escrito por ele que dá Contexto Geral de um negócio simplificado e hipotético que se dedica ao atendimento de vender produtos imobiliários da Área Incrível.
+Também foi dado a ele como contexto o site da Área Incrível (www.areaincrivel.com.br).
+*TO DO* **Ainda em construção**
 
 <details>
+  <summary>Contexto e Pipeline definidos para Incrível</summary>
 </details>
 
 ## Integrações
@@ -407,3 +412,4 @@ Pontos positivos:
 
 Pontos negativos:
 - Alguma dificuldade de fazer debug nas integrações. Seria interessante, por exemplo, poder testar as tools criadas, sem a necessidade de fazer um novo chat de teste, e retornar mensagens de erro mais claras.
+- Ficamos presos as opções de canais de comunicação que são suportados pela plataforma. Eles ainda nem desenvolvera e-mail, por exemplo.
