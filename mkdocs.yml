@@ -99,6 +99,7 @@ nav:
     - Evolution API: 'tools/evolution-api.md'
     - Darwin AI:
       - Análise da plataforma: 'tools/darwin-ai/darwin-ai-analysis.md'
+    - n8n: 'tools/n8n.md'
   - Documentation:
       - Documentation: 'documentation/documentacao.md'
       - API Sienge:
