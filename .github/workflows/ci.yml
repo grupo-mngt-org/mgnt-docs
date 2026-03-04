@@ -64,6 +64,7 @@ env:
   N8N_PASSWORD: ${{ secrets.N8N_PASSWORD }}
   API_QIVE_APP_ID: ${{ secrets.API_QIVE_APP_ID }}
   API_QIVE_APP_KEY: ${{ secrets.API_QIVE_APP_KEY }}
+  DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
 
 jobs:
   deploy:

@@ -1,7 +1,7 @@
 site_name: "DOCS MNGT"
 theme:
-  name: 'material'
-  logo: './files/logo-dark.webp'
+  name: "material"
+  logo: "./files/logo-dark.webp"
   features:
     - content.code.copy
     - content.code.select
@@ -20,8 +20,8 @@ theme:
 
 plugins:
   - encryptcontent:
-      title_prefix: '🔒 '
-      global_password: !ENV [PASSWORD, 'mngt']
+      title_prefix: "🔒 "
+      global_password: !ENV [PASSWORD, "mngt"]
   - link-embeds:
       enabled: true
       name_default: "Untitled Link"
@@ -37,8 +37,8 @@ plugins:
 
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist  # Lista de tarefas
-  - pymdownx.emoji  # Emojis
+  - pymdownx.tasklist # Lista de tarefas
+  - pymdownx.emoji # Emojis
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.highlight:
@@ -61,83 +61,82 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
 
-
 extra_css:
   - https://unpkg.com/mermaid@8.5.1/dist/mermaid.css
   - ./stylesheets/link-embeds.css
 extra_javascript:
   - https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js
 
-
 nav:
-  - Home: 'index.md'
+  - Home: "index.md"
   - AI:
-    - Guias:
-      - 1 - IA Aplicada para desenvolvedores em empresas: 'ai/guides/1-IA-aplicada-para-desenvolvedores-em-empresas.md'
-      - 4 - Integração e Automação com IA em Negócios (Guia Avançado): 'ai/guides/4-integração-e-automacao-com-IA-em-negocios.md'
-    - Ferramentas:
-      - OpenWebUI: 'ai/tools/openwebui.md'
-    - Descobertas:
-      - Oportunidades de aplicação de IA nos negócios do Grupo MNGT: 'ai/discovery/oportunidades.md'
+      - Guias:
+          - 1 - IA Aplicada para desenvolvedores em empresas: "ai/guides/1-IA-aplicada-para-desenvolvedores-em-empresas.md"
+          - 4 - Integração e Automação com IA em Negócios (Guia Avançado): "ai/guides/4-integração-e-automacao-com-IA-em-negocios.md"
+      - Ferramentas:
+          - OpenWebUI: "ai/tools/openwebui.md"
+      - Descobertas:
+          - Oportunidades de aplicação de IA nos negócios do Grupo MNGT: "ai/discovery/oportunidades.md"
   - Credenciais:
-    - ChatGPT: 'credentials/chatgpt.md'
-    - SupaBase: 'credentials/supabase.md'
-    - APP MNGT: 'credentials/app-mngt.md'
-    - Servidor API: 'credentials/server-api-mngt.md'
-    - Wordpress: 'credentials/wordpress.md'
-    - Email Mais Armazem: 'credentials/email-mais-armazem.md'
-    - Email Gabriel: 'credentials/email-gabriel.md'
-    - Email Devs: 'credentials/email-devs.md'
-    - API Mobbus: 'credentials/api-mobbus.md'
-    - API Prevision: 'credentials/api-prevision.md'
-    - API Sienge: 'credentials/api-sienge.md'
-    - API Softexpert: 'credentials/api-softexpert.md'
-    - API Qive: 'credentials/api-qive.md'
-    - Evolution API: 'credentials/evolution-api.md'
-    - n8n: 'credentials/n8n.md'
+      - ChatGPT: "credentials/chatgpt.md"
+      - SupaBase: "credentials/supabase.md"
+      - APP MNGT: "credentials/app-mngt.md"
+      - Servidor API: "credentials/server-api-mngt.md"
+      - Wordpress: "credentials/wordpress.md"
+      - Email Mais Armazem: "credentials/email-mais-armazem.md"
+      - Email Gabriel: "credentials/email-gabriel.md"
+      - Email Devs: "credentials/email-devs.md"
+      - Discord: "credentials/discord.md"
+      - API Mobbus: "credentials/api-mobbus.md"
+      - API Prevision: "credentials/api-prevision.md"
+      - API Sienge: "credentials/api-sienge.md"
+      - API Softexpert: "credentials/api-softexpert.md"
+      - API Qive: "credentials/api-qive.md"
+      - Evolution API: "credentials/evolution-api.md"
+      - n8n: "credentials/n8n.md"
   - Ferramentas:
-    - Evolution API: 'tools/evolution-api.md'
-    - Darwin AI:
-      - Análise da plataforma: 'tools/darwin-ai/darwin-ai-analysis.md'
-    - n8n: 'tools/n8n.md'
+      - Evolution API: "tools/evolution-api.md"
+      - Darwin AI:
+          - Análise da plataforma: "tools/darwin-ai/darwin-ai-analysis.md"
+      - n8n: "tools/n8n.md"
   - Documentation:
-      - Documentation: 'documentation/documentacao.md'
+      - Documentation: "documentation/documentacao.md"
       - API Sienge:
-          - API Sienge: 'documentation/documentacao/api-sienge.md'
-          - Modulo Complementar: 'documentation/documentacao/api-sienge/0-modulo-complementar.md'
-          - Modulo de Apoio Cadastros Base: 'documentation/documentacao/api-sienge/1-modulo-de-apoio-cadastros-base.md'
-          - Modulo Financeiro: 'documentation/documentacao/api-sienge/2-modulo-financeiro.md'
-          - Modulo de Suprimentos Compras e Estoque: 'documentation/documentacao/api-sienge/3-modulo-de-suprimentos-compras-e-estoque.md'
-          - Modulo de Engenharia e Custos: 'documentation/documentacao/api-sienge/4-modulo-de-engenharia-e-custos.md'
-          - Modulo Comercial Vendas e CRM: 'documentation/documentacao/api-sienge/5-modulo-comercial-vendas-e-crm.md'
+          - API Sienge: "documentation/documentacao/api-sienge.md"
+          - Modulo Complementar: "documentation/documentacao/api-sienge/0-modulo-complementar.md"
+          - Modulo de Apoio Cadastros Base: "documentation/documentacao/api-sienge/1-modulo-de-apoio-cadastros-base.md"
+          - Modulo Financeiro: "documentation/documentacao/api-sienge/2-modulo-financeiro.md"
+          - Modulo de Suprimentos Compras e Estoque: "documentation/documentacao/api-sienge/3-modulo-de-suprimentos-compras-e-estoque.md"
+          - Modulo de Engenharia e Custos: "documentation/documentacao/api-sienge/4-modulo-de-engenharia-e-custos.md"
+          - Modulo Comercial Vendas e CRM: "documentation/documentacao/api-sienge/5-modulo-comercial-vendas-e-crm.md"
       - Registro de Reunioes:
-          - Registro de Reunioes: 'documentation/documentacao/registro-de-reunioes.md'
-          - Automatizacao Processo Contas a Pagar: 'documentation/documentacao/registro-de-reunioes/automatizacao-processo-contas-a-pagar.md'
-          - Mobuss Softexpert: 'documentation/documentacao/registro-de-reunioes/mobuss-softexpert.md'
-          - Registro Reuniao 05-11: 'documentation/documentacao/registro-de-reunioes/registro-reuniao-05-11-1.md'
-          - Registro Reuniao 10-11: 'documentation/documentacao/registro-de-reunioes/registro-reuniao-10-11-1.md'
+          - Registro de Reunioes: "documentation/documentacao/registro-de-reunioes.md"
+          - Automatizacao Processo Contas a Pagar: "documentation/documentacao/registro-de-reunioes/automatizacao-processo-contas-a-pagar.md"
+          - Mobuss Softexpert: "documentation/documentacao/registro-de-reunioes/mobuss-softexpert.md"
+          - Registro Reuniao 05-11: "documentation/documentacao/registro-de-reunioes/registro-reuniao-05-11-1.md"
+          - Registro Reuniao 10-11: "documentation/documentacao/registro-de-reunioes/registro-reuniao-10-11-1.md"
       - Visita Rio Claro:
-          - Visita Rio Claro: 'documentation/documentacao/visita-rio-claro.md'
-          - Administrativo Comercial e Contratos: 'documentation/documentacao/visita-rio-claro/administrativo-comercial-e-contratos.md'
-          - Agencia: 'documentation/documentacao/visita-rio-claro/agencia.md'
-          - Compras: 'documentation/documentacao/visita-rio-claro/compras.md'
-          - Conclusoes: 'documentation/documentacao/visita-rio-claro/conclusoes.md'
-          - Dia 1 08-12: 'documentation/documentacao/visita-rio-claro/dia-1-08-12.md'
-          - Financeiro: 'documentation/documentacao/visita-rio-claro/financeiro.md'
-          - House: 'documentation/documentacao/visita-rio-claro/house.md'
-          - Incorporacao: 'documentation/documentacao/visita-rio-claro/incorporacao.md'
-          - M2log Mais Armazem: 'documentation/documentacao/visita-rio-claro/m2log-mais-armazem.md'
-          - Orcamento: 'documentation/documentacao/visita-rio-claro/orcamento.md'
-          - Planejamento e Medicao: 'documentation/documentacao/visita-rio-claro/planejamento-e-medicao.md'
-          - Produtos: 'documentation/documentacao/visita-rio-claro/produtos.md'
-          - Projetos: 'documentation/documentacao/visita-rio-claro/projetos.md'
-          - Prospeccao: 'documentation/documentacao/visita-rio-claro/prospeccao.md'
-          - Qualidade: 'documentation/documentacao/visita-rio-claro/qualidade.md'
-          - SAC: 'documentation/documentacao/visita-rio-claro/sac.md'
-          - Seguranca: 'documentation/documentacao/visita-rio-claro/seguranca.md'
-          - Visita as Obras: 'documentation/documentacao/visita-rio-claro/visita-as-obras.md'
+          - Visita Rio Claro: "documentation/documentacao/visita-rio-claro.md"
+          - Administrativo Comercial e Contratos: "documentation/documentacao/visita-rio-claro/administrativo-comercial-e-contratos.md"
+          - Agencia: "documentation/documentacao/visita-rio-claro/agencia.md"
+          - Compras: "documentation/documentacao/visita-rio-claro/compras.md"
+          - Conclusoes: "documentation/documentacao/visita-rio-claro/conclusoes.md"
+          - Dia 1 08-12: "documentation/documentacao/visita-rio-claro/dia-1-08-12.md"
+          - Financeiro: "documentation/documentacao/visita-rio-claro/financeiro.md"
+          - House: "documentation/documentacao/visita-rio-claro/house.md"
+          - Incorporacao: "documentation/documentacao/visita-rio-claro/incorporacao.md"
+          - M2log Mais Armazem: "documentation/documentacao/visita-rio-claro/m2log-mais-armazem.md"
+          - Orcamento: "documentation/documentacao/visita-rio-claro/orcamento.md"
+          - Planejamento e Medicao: "documentation/documentacao/visita-rio-claro/planejamento-e-medicao.md"
+          - Produtos: "documentation/documentacao/visita-rio-claro/produtos.md"
+          - Projetos: "documentation/documentacao/visita-rio-claro/projetos.md"
+          - Prospeccao: "documentation/documentacao/visita-rio-claro/prospeccao.md"
+          - Qualidade: "documentation/documentacao/visita-rio-claro/qualidade.md"
+          - SAC: "documentation/documentacao/visita-rio-claro/sac.md"
+          - Seguranca: "documentation/documentacao/visita-rio-claro/seguranca.md"
+          - Visita as Obras: "documentation/documentacao/visita-rio-claro/visita-as-obras.md"
   - Tasks:
-    - Tarefas: 'tasks/tarefas.md'
-    - Farol de Compras: 'tasks/tarefas/farol-de-compras.md'
+      - Tarefas: "tasks/tarefas.md"
+      - Farol de Compras: "tasks/tarefas/farol-de-compras.md"
   - Infra:
-    - Start: 'infra/start.md'
+      - Start: "infra/start.md"
