@@ -138,5 +138,6 @@ nav:
   - Tasks:
       - Tarefas: "tasks/tarefas.md"
       - Farol de Compras: "tasks/tarefas/farol-de-compras.md"
+      - Cadastro Único: "tasks/tarefas/proposta-cadastro-unico.md"
   - Infra:
       - Start: "infra/start.md"
