@@ -65,6 +65,8 @@ env:
   API_QIVE_APP_ID: ${{ secrets.API_QIVE_APP_ID }}
   API_QIVE_APP_KEY: ${{ secrets.API_QIVE_APP_KEY }}
   DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+  NETDATA_USER: ${{ secrets.NETDATA_USER }}
+  NETDATE_PASSWORD: ${{ secrets.NETDATA_PASSWORD }}
 
 jobs:
   deploy:
