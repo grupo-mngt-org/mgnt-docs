@@ -94,6 +94,7 @@ nav:
       - API Qive: "credentials/api-qive.md"
       - Evolution API: "credentials/evolution-api.md"
       - n8n: "credentials/n8n.md"
+      - Netdata: "credentials/nedata.md"
   - Ferramentas:
       - Evolution API: "tools/evolution-api.md"
       - Darwin AI:
