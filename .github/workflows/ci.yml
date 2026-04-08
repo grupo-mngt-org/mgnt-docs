@@ -67,6 +67,8 @@ env:
   DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
   NETDATA_USER: ${{ secrets.NETDATA_USER }}
   NETDATA_PASSWORD: ${{ secrets.NETDATA_PASSWORD }}
+  SOCIAL_MONITOR_GH_TOKEN: ${{ secrets.SOCIAL_MONITOR_GH_TOKEN }}
+  
 
 jobs:
   deploy:
