@@ -93,6 +93,11 @@ npm install -g npm@11.11.0
 npm install -g yarn
 ```
 
+### Instalar o UV (para gerenciamento de ambientes virtuais Python)
+```shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ### Instalação do Docker [NO CASO DE WSL, USE O DOCKER DESKTOP NO WINDOWS]
 
 === "Ubuntu"
