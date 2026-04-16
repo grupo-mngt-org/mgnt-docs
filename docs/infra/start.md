@@ -12,11 +12,11 @@ hide:
 
 === "Ubuntu"
     ```shell
-    sudo apt-get update
+    sudo apt-get update && sudo apt-get upgrade -y
     ```
 === "Debian"
     ```shell
-    sudo apt-get update
+    sudo apt-get update && sudo apt-get upgrade -y
     ```
 === "Arch"
     ```shell
@@ -27,11 +27,11 @@ hide:
 
 === "Ubuntu"
     ```shell
-    sudo apt-get install -y git-core zlib1g-dev build-essential NetworkManager libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev micro libmysqlclient-dev mysql-client-core-8.0 libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb libbz2-dev
+    sudo apt-get install -y git-core zlib1g-dev build-essential NetworkManager libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev micro libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb libbz2-dev
     ```
 === "Debian"
     ```shell
-    sudo apt-get install -y git zlib1g-dev build-essential curl libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev micro libmariadb-dev-compat libmariadb-dev mariadb-server mariadb-client-core libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb libbz2-dev
+    sudo apt-get install -y git zlib1g-dev build-essential curl libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev micro libgbm-dev libnotify-dev libnss3 libxss1 libxtst6 xauth xvfb libbz2-dev
     ```
 === "Arch"
     ```shell
@@ -49,7 +49,7 @@ echo 'legacy_version_file = yes' >> ~/.asdfrc
 source ~/.bashrc
 ```
 
-### Adicionando RUBY, NODE e PYTHON
+### Adicionando NODE e PYTHON
 
 ```shell
 asdf plugin add nodejs
@@ -60,15 +60,15 @@ asdf plugin add python
 ### Instalação NodeJS
 > :bulb: **Dica**: Esta etapa é demorada, vá buscar uma água!
 ```shell
-asdf install nodejs 20.9.0
-asdf global nodejs 20.9.0
+asdf install nodejs 22.17.0
+asdf global nodejs 22.17.0
 ```
 
 ### Instalação Python (para documentação)
 > :bulb: **Dica**: Também demora um pouco... aproveite para ir ao banheiro!
 ```shell
-asdf install python 3.11.0
-asdf global python 3.11.0
+asdf install python 3.13.5
+asdf global python 3.13.5
 ```
 
 
@@ -81,15 +81,15 @@ which node && node -v && which python && python --version
 > :information_source: A etapa acima deve retornar o seguinte:
  
 ```{: .txt .no-copy}
-/home/mercado/.asdf/shims/node
-v20.9.0
-/home/mercado/.asdf/shims/python
-Python 3.11.0
+/home/<user>/.asdf/shims/node
+v22.17.0
+/home/<user>/.asdf/shims/python
+Python 3.13.5
 ```
 
 ### Atualizar NPM e instalar o Yarn
 ```shell
-npm install -g npm@10.5.0
+npm install -g npm@11.11.0
 npm install -g yarn
 ```
 
