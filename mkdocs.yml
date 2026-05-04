@@ -140,5 +140,10 @@ nav:
       - Tarefas: "tasks/tarefas.md"
       - Farol de Compras: "tasks/tarefas/farol-de-compras.md"
       - Cadastro Único: "tasks/tarefas/proposta-cadastro-unico.md"
+  - Claude Code:
+      - Claude Code: "claude-code/claude-code.md"
+      - Config:
+          - Fast Config: "claude-code/config/fast-config.md"
+          - RTK: "claude-code/config/rtk.md"
   - Infra:
       - Start: "infra/start.md"
