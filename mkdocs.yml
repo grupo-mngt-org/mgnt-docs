@@ -145,5 +145,6 @@ nav:
       - Config:
           - Fast Config: "claude-code/config/fast-config.md"
           - RTK: "claude-code/config/rtk.md"
+          - Caveman: "claude-code/config/caveman.md"
   - Infra:
       - Start: "infra/start.md"
