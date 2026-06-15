@@ -136,6 +136,14 @@ nav:
           - SAC: "documentation/documentacao/visita-rio-claro/sac.md"
           - Seguranca: "documentation/documentacao/visita-rio-claro/seguranca.md"
           - Visita as Obras: "documentation/documentacao/visita-rio-claro/visita-as-obras.md"
+  - Convenções:
+      - Convenções: "conventions/convencoes.md"
+      - Gestão de Projetos: "conventions/projects-management.md"
+      - Commits e Branches: "conventions/commits.md"
+      - Pull Requests: "conventions/pull-requests.md"
+      - Definition of Ready (DoR): "conventions/definition-of-ready.md"
+      - Definition of Done (DoD): "conventions/definition-of-done.md"
+      - Gestão de Mudanças: "conventions/change-management.md"
   - Tasks:
       - Tarefas: "tasks/tarefas.md"
       - Farol de Compras: "tasks/tarefas/farol-de-compras.md"
