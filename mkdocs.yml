@@ -95,6 +95,8 @@ nav:
       - Evolution API: "credentials/evolution-api.md"
       - n8n: "credentials/n8n.md"
       - Netdata: "credentials/netdata.md"
+      - Resend: "credentials/resend.md"
+      - Cloudflare: "credentials/cloudflare.md"
   - Ferramentas:
       - Evolution API: "tools/evolution-api.md"
       - Darwin AI:
